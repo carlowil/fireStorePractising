@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938854547133",
+    "project_id": "adminapplication-a9580",
+    "storage_bucket": "adminapplication-a9580.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938854547133:android:bd3121177c1a04beb701d4",
+        "android_client_info": {
+          "package_name": "com.carlowil.adminapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938854547133-ciu5rab03pt2cf25ms0gi8clnbqgkqgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi1pZuWE98BVgxVhcRqa2mlfdv5e7CK5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938854547133-ciu5rab03pt2cf25ms0gi8clnbqgkqgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
