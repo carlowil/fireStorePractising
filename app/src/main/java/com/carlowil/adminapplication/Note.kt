@@ -1,29 +1,7 @@
 package com.carlowil.adminapplication
 
-class Note() {
+import com.google.firebase.firestore.Exclude
 
-    private var title : String = ""
-    private var description : String = ""
-
-    constructor(title : String, description : String) : this() {
-        this.title = title
-        this.description = description
-    }
-
-    fun getTitle() : String {
-        return title
-    }
-
-    fun getDescription() : String {
-        return description
-    }
-
-    fun setTitle(newTitle : String) {
-        title = newTitle
-    }
-
-    fun setDescription(newDescription : String) {
-        description = newDescription
-    }
-
+data class Note(var title : String = "", var description : String = "", var priority : Int = 0) {
+    var id : String = "" @Exclude get
 }

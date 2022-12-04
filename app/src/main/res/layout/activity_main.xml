@@ -3,42 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="12dp"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
         <ScrollView
+            android:padding="12dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:orientation="vertical">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/titleTextField"
+                <EditText
+                    android:id="@+id/editTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:hint="@string/title" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/descTextField"
+                <EditText
+                    android:id="@+id/editDesc"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:hint="@string/description" />
 
+                <EditText
+                    android:id="@+id/editPriority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/priority"/>
+
                 <Button
-                    android:id="@+id/submitButton"
+                    android:id="@+id/addButton"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
-                    android:text="@string/submit" />
+                    android:text="@string/add" />
 
                 <Button
                     android:id="@+id/loadButton"
@@ -46,38 +51,16 @@
                     android:layout_height="52dp"
                     android:text="@string/load" />
 
-                <Button
-                    android:id="@+id/updateButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:text="@string/update" />
-                <Button
-                    android:id="@+id/delDesc"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:text="@string/delete_description"/>
-
-                <Button
-                    android:id="@+id/delNote"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/delete_note"/>
-
                 <TextView
-                    android:id="@+id/titleTextView"
+                    android:id="@+id/infoTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"/>
 
-                <TextView
-                    android:id="@+id/descTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"/>
 
             </LinearLayout>
 
         </ScrollView>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
